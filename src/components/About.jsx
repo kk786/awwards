@@ -2,6 +2,7 @@ import React from 'react';
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import AnimatedTitle from "./AnimatedTitle.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,9 +32,9 @@ const About = () => {
                 <h2 className='font-general text-sm md:text-[10px] uppercase'>
                     Welcome To Zentry
                 </h2>
-                <div className='mt-5 text-center text-4xl md:text-[6rem] uppercase leading-[0.8]'>
-                    <p>Dis<b>c</b>over the world's <br/> l<b>a</b>rgest shared adventure</p>
-                </div>
+                    <AnimatedTitle title="Dis<b>c</b>over the world's <br/> l<b>a</b>rgest shared adventure"
+                                   containerClass='mt-5 !text-black text-center'
+                    />
                 <div className='about-subtext'>
                     <p>The Game of Games begins-your life, now an epic MMORPG</p>
                 </div>
